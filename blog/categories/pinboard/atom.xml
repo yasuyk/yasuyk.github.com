@@ -4,7 +4,7 @@
   <title><![CDATA[Category: pinboard | yasuyk's blog]]></title>
   <link href="http://yasuyk.github.com/blog/categories/pinboard/atom.xml" rel="self"/>
   <link href="http://yasuyk.github.com/"/>
-  <updated>2013-01-15T22:44:42+09:00</updated>
+  <updated>2013-01-15T23:06:23+09:00</updated>
   <id>http://yasuyk.github.com/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
@@ -28,6 +28,9 @@
 しかし、自分のほしい機能を持つ拡張をざっと探したところ見当たらなかった
 ので、作ってみました。あと、Chorme拡張を作ってみたかったというのもあり
 ます。</p>
+
+<!-- more -->
+
 
 <p><img src="images/pinboard_extension_screen_capture_01.png" alt="" />
 <img src="images/pinboard_extension_screen_capture_02.png" alt="" /></p>
