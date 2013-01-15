@@ -4,7 +4,7 @@
   <title><![CDATA[Category: chrome | yasuyk's blog]]></title>
   <link href="http://yasuyk.github.com/blog/categories/chrome/atom.xml" rel="self"/>
   <link href="http://yasuyk.github.com/"/>
-  <updated>2013-01-16T01:12:54+09:00</updated>
+  <updated>2013-01-16T01:43:26+09:00</updated>
   <id>http://yasuyk.github.com/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
@@ -25,15 +25,14 @@
 
 
 <p><a href="https://pinboard.in">Pinboard</a>へブックマークを保存するChorme拡張は数多にあります。
-しかし、自分のほしい機能を持つ拡張をざっと探したところ見当たらなかった
-ので、作ってみました。あと、Chorme拡張を作ってみたかったというのもあり
-ます。</p>
+しかし、自分のほしい機能を持つ拡張をざっと探したところ見当たらなかったので、作ってみました。
+あと、Chorme拡張を作ってみたかったというのもあります。</p>
 
 <!-- more -->
 
 
-<p><img src="images/pinboard_extension_screen_capture_01.png" alt="" />
-<img src="images/pinboard_extension_screen_capture_02.png" alt="" /></p>
+<p><img src="http://yasuyk.github.com/images/pinboard_extension_screen_capture_01.png" alt="" />
+<img src="http://yasuyk.github.com/images/pinboard_extension_screen_capture_02.png" alt="" /></p>
 
 <p>次の機能が欲しかったものでした。</p>
 
