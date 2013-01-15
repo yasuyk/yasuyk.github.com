@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension/</loc>
+        <lastmod>2013-01-15T21:59:12+09:00</lastmod>
+    </url>
+    <url>
         <loc>http://yasuyk.github.com/blog/archives/</loc>
-        <lastmod>2013-01-15T19:50:23+09:00</lastmod>
+        <lastmod>2013-01-15T21:59:12+09:00</lastmod>
     </url>
     <url>
         <loc>http://yasuyk.github.com/</loc>
-        <lastmod>2013-01-15T19:50:23+09:00</lastmod>
+        <lastmod>2013-01-15T21:59:12+09:00</lastmod>
     </url>
     <url>
         <loc>http://yasuyk.github.com/robots.txt</loc>
