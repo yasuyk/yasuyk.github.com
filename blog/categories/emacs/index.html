@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>yasuyk</title>
+  <title>Category: emacs - yasuyk</title>
   <meta name="author" content="yasuyk">
 
   
-  <meta name="description" content="Glide Noteさんの記事をみて、Markedを購入しました。 気に入ったところ Glide Noteさんの記事にあるMarkdedの良い点 に加えて、Multi-Columnというスタイルが気に入りました。 下記のように、Multi-Columnは複数行のスタイルとなっていて、 &hellip;">
+  <meta name="description" content="Category: emacs">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yasuyk.github.com/">
+  <link rel="canonical" href="http://yasuyk.github.comblog/categories/emacs/">
   <!-- <link href="/favicon.png" rel="icon"> -->
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -83,138 +83,40 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2013/01/16/emacs-marked/">emacsでもMarkedでmarkdown編集が快適になった</a></h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-16T17:51:00+09:00" pubdate data-updated="true">2013-01-16</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Emacs</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-  <div class="entry-content"><p><a href="http://blog.glidenote.com/blog/2013/01/10/vim-quickrun-marked/">Glide Noteさんの記事</a>をみて、Markedを購入しました。</p>
 
-<h2>気に入ったところ</h2>
+  
+  <h2>2013</h2>
 
-<p>Glide Noteさんの記事にある<a href="http://blog.glidenote.com/blog/2013/01/10/vim-quickrun-marked/#marked">Markdedの良い点</a> に加えて、Multi-Columnというスタイルが気に入りました。</p>
+<article>
+  
+<h1><a href="/blog/2013/01/16/emacs-marked/">emacsでもMarkedでmarkdown編集が快適になった</a></h1>
+<time datetime="2013-01-16T17:51:00+09:00" pubdate><span class='month'>01</span>-<span class='day'>16</span> <span class='year'>2013</span></time>
 
-<p>下記のように、Multi-Columnは複数行のスタイルとなっていて、markdownを眺めるのに便利です。</p>
-
-<p>Multi-Columnスタイル<br/>
-<img src="/images/2013/01/emacs-marked-multi-column.png" alt="" /></p>
-
-<p>Githubスタイル<br/>
-<img src="/images/2013/01/emacs-marked-github.png" alt="" /></p>
-
-<p>スタイルの変更はキーで操作できます。</p>
-
-<p>デフォルトの設定はGithubスタイルにしておき、markdownを見直したくなったらMulti-Columnスタイルに切り替えるという使い方をしています。</p>
-
-<p>emacsでは次のelispで編集中のmarkdownをプレビューできます。</p>
-
-<div><script src='https://gist.github.com/4545953.js'></script>
-<noscript><pre><code>;; from http://support.markedapp.com/kb/how-to-tips-and-tricks/marked-bonus-pack-scripts-commands-and-bundles
-
-(defun markdown-preview-file ()
-  &quot;run Marked on the current file and revert the buffer&quot;
-  (interactive)
-  (shell-command
-   (format &quot;open -a /Applications/Marked.app %s&quot;
-       (shell-quote-argument (buffer-file-name))))
-)
-(global-set-key &quot;\C-cm&quot; 'markdown-preview-file)
-</code></pre></noscript></div>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/emacs/'>emacs</a>, <a class='category' href='/blog/categories/mac/'>mac</a>, <a class='category' href='/blog/categories/markdown/'>markdown</a></span>
+</footer>
 
 
+</article>
 
 </div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2013/01/15/create-pinboard-chrome-extension/">Pinboardへブックマークを保存するChrome拡張を作りました</a></h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
 
   
-
-
-<time datetime="2013-01-15T20:22:00+09:00" pubdate data-updated="true">2013-01-15</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-<li><a href="https://chrome.google.com/webstore/detail/pinboard/ghhlbnkkachmkhdfkfkoagcngfbnhgaf">Chrome ウェブストア - Pinboard</a></li>
-<li><a href="https://github.com/yasuyk/Pinboard-Chrome-Extension">yasuyk/Pinboard-Chrome-Extension</a></li>
-</ul>
-
-
-<p><a href="https://pinboard.in">Pinboard</a>へブックマークを保存するChorme拡張は数多にあります。
-しかし、自分のほしい機能を持つ拡張をざっと探したところ見当たらなかったので、作ってみました。
-あと、Chorme拡張を作ってみたかったというのもあります。</p>
+</article>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/01/15/create-pinboard-chrome-extension/">続きをよむ</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -234,6 +136,7 @@
 
   
 </aside>
+
 
     </div>
   </div>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: emacs | yasuyk]]></title>
+  <link href="http://yasuyk.github.com/blog/categories/emacs/atom.xml" rel="self"/>
+  <link href="http://yasuyk.github.com/"/>
+  <updated>2013-01-16T19:07:15+09:00</updated>
+  <id>http://yasuyk.github.com/</id>
+  <author>
+    <name><![CDATA[yasuyk]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[emacsでもMarkedでmarkdown編集が快適になった]]></title>
+    <link href="http://yasuyk.github.com/blog/2013/01/16/emacs-marked/"/>
+    <updated>2013-01-16T17:51:00+09:00</updated>
+    <id>http://yasuyk.github.com/blog/2013/01/16/emacs-marked</id>
+    <content type="html"><![CDATA[<p><a href="http://blog.glidenote.com/blog/2013/01/10/vim-quickrun-marked/">Glide Noteさんの記事</a>をみて、Markedを購入しました。</p>
+
+<h2>気に入ったところ</h2>
+
+<p>Glide Noteさんの記事にある<a href="http://blog.glidenote.com/blog/2013/01/10/vim-quickrun-marked/#marked">Markdedの良い点</a> に加えて、Multi-Columnというスタイルが気に入りました。</p>
+
+<p>下記のように、Multi-Columnは複数行のスタイルとなっていて、markdownを眺めるのに便利です。</p>
+
+<p>Multi-Columnスタイル<br/>
+<img src="/images/2013/01/emacs-marked-multi-column.png" alt="" /></p>
+
+<p>Githubスタイル<br/>
+<img src="/images/2013/01/emacs-marked-github.png" alt="" /></p>
+
+<p>スタイルの変更はキーで操作できます。</p>
+
+<p>デフォルトの設定はGithubスタイルにしておき、markdownを見直したくなったらMulti-Columnスタイルに切り替えるという使い方をしています。</p>
+
+<p>emacsでは次のelispで編集中のmarkdownをプレビューできます。</p>
+
+<p><div><script src='https://gist.github.com/4545953.js'></script>
+<noscript><pre><code>;; from http://support.markedapp.com/kb/how-to-tips-and-tricks/marked-bonus-pack-scripts-commands-and-bundles
+
+(defun markdown-preview-file ()
+  &quot;run Marked on the current file and revert the buffer&quot;
+  (interactive)
+  (shell-command
+   (format &quot;open -a /Applications/Marked.app %s&quot;
+       (shell-quote-argument (buffer-file-name))))
+)
+(global-set-key &quot;\C-cm&quot; 'markdown-preview-file)
+</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>
