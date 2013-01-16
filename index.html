@@ -9,7 +9,7 @@
   <meta name="author" content="yasuyk">
 
   
-  <meta name="description" content="Glide Noteさんの記事をみて、Markedを購入しました。 気に入ったところ Glide Noteさんの記事にあるMarkdedの良い点 に加えて、Multi-Columnというスタイルが気に入りました。 下記のように、Multi-Columnは複数行のスタイルとなっていて、 &hellip;">
+  <meta name="description" content="Dash (Docs &amp; Snippets) 「Dash」 は高速なドキュメントブラウザ(とスニペット管理)です。 emacsのカーソル位置にある単語を、そのDashで検索するelispを紹介します。 (defun dash () (interactive) (shell-command &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,70 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+        <h1 class="entry-title"><a href="/blog/2013/01/17/emacs-with-dash/">emacsのカーソル位置にある単語をDashで調べるには</a></h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-17T02:27:00+09:00" pubdate data-updated="true">2013-01-17</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+<li><a href="https://itunes.apple.com/jp/app/dash-docs-snippets/id458034879">Dash (Docs &amp; Snippets)</a></li>
+</ul>
+
+
+<p> <img src="/images/2013/01/dash_icon.175x175-75.png" alt="" /></p>
+
+<p><a href="https://itunes.apple.com/jp/app/dash-docs-snippets/id458034879">「Dash」</a> は高速なドキュメントブラウザ(とスニペット管理)です。</p>
+
+<p>emacsのカーソル位置にある単語を、そのDashで検索するelispを紹介します。</p>
+
+<div><script src='https://gist.github.com/4549131.js?file=dash.el'></script>
+<noscript><pre><code>(defun dash ()
+  (interactive)
+  (shell-command
+   (format &quot;open dash://%s&quot;
+           (or (thing-at-point 'symbol) &quot;&quot;))))
+</code></pre></noscript></div>
+
+
+<p>シェルから &#8220;open dash://[検索語]&#8221; と実行しているだけなので、シェルを実行できるアプリならemacs以外でも利用可能です。</p>
+
+<p>ちなみに、現在(2013/01/17)のDashの価格は450円なんですね…。</p>
+
+<p>自分は1700円で購入しただけに、ものすごくお買い得に感じます。</p>
+
+<p>なお、Dashの購入方法は、App Storeからフリーでインストールしたあと、設定画面から購入します。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -247,6 +311,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/01/17/emacs-with-dash/">emacsのカーソル位置にある単語をDashで調べるには</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/01/16/emacs-marked/">emacsでもMarkedでmarkdown編集が快適になった</a>
       </li>
     
@@ -258,7 +326,7 @@
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/chrome'>chrome (1)</a></li><li><a href='/blog/categories/emacs'>emacs (1)</a></li><li><a href='/blog/categories/mac'>mac (1)</a></li><li><a href='/blog/categories/markdown'>markdown (1)</a></li><li><a href='/blog/categories/pinboard'>pinboard (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/chrome'>chrome (1)</a></li><li><a href='/blog/categories/emacs'>emacs (2)</a></li><li><a href='/blog/categories/mac'>mac (2)</a></li><li><a href='/blog/categories/markdown'>markdown (1)</a></li><li><a href='/blog/categories/pinboard'>pinboard (1)</a></li></ul>
 </section>
 
   
