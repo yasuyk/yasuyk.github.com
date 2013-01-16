@@ -4,7 +4,7 @@
   <title><![CDATA[Category: pinboard | yasuyk]]></title>
   <link href="http://yasuyk.github.com/blog/categories/pinboard/atom.xml" rel="self"/>
   <link href="http://yasuyk.github.com/"/>
-  <updated>2013-01-16T17:20:10+09:00</updated>
+  <updated>2013-01-16T17:43:22+09:00</updated>
   <id>http://yasuyk.github.com/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
@@ -43,8 +43,7 @@
 
 
 <p><strong>注意点</strong>としては、2. のキー操作は<a href="https://www.google.com/intl/en/chrome/browser/beta.html">Google Chrome Beta</a>のみ利用可能です。
-キー操作を<a href="http://developer.chrome.com/extensions/commands.html">chrome.commands</a>という開発中のAPIで実装して
-いるためです。</p>
+キー操作を<a href="http://developer.chrome.com/extensions/commands.html">chrome.commands</a>という開発中のAPIで実装していることが理由です。</p>
 
 <h1>インストール</h1>
 
