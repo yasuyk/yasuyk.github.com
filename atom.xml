@@ -4,7 +4,7 @@
   <title><![CDATA[yasuyk]]></title>
   <link href="http://yasuyk.github.com/atom.xml" rel="self"/>
   <link href="http://yasuyk.github.com/"/>
-  <updated>2013-01-16T19:07:15+09:00</updated>
+  <updated>2013-01-16T19:12:04+09:00</updated>
   <id>http://yasuyk.github.com/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
@@ -70,9 +70,6 @@
 <p><a href="https://pinboard.in">Pinboard</a>へブックマークを保存するChorme拡張は数多にあります。
 しかし、自分のほしい機能を持つ拡張をざっと探したところ見当たらなかったので、作ってみました。
 あと、Chorme拡張を作ってみたかったというのもあります。</p>
-
-<!-- more -->
-
 
 <p><img src="http://yasuyk.github.com/images/pinboard_extension_screen_capture_01.png" alt="" />
 <img src="http://yasuyk.github.com/images/pinboard_extension_screen_capture_02.png" alt="" /></p>
