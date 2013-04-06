@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>[Reading Notes] JavaScript The Definitive Guide, 6th Edition - yasuyk</title>
+  <meta name="author" content="yasuyk">
+
+  
+  <meta name="description" content="[Reading Notes] JavaScript the Definitive Guide, 6th Edition 2013-04-07 CHAPTER 3 Types, Values, and Variables 3.10 Variable Scope 3.10.1 Function &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yasuyk.github.com/reading-notes/javascript-the-definitive-guide-6th-edition/">
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="yasuyk" type="application/atom+xml">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://www.gravatar.com/avatar/1599b53998c3d86647b719f28b69605a?s=16" rel="icon">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37679314-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <!-- <div id="logo">
+  <div id="logoLeft">{</div>
+  <div id="logoText">mob</div>
+  <div id="logoRight">}</div>
+  <di class="clear"></div>
+  </div> -->
+  <h1><a href="/">yasuyk</a></h1>
+  
+  <div class="clear"></div>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yasuyk.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://twitter.com/yasuyk">Twitter</a></li>
+  <li><a href="https://pinboard.in/u:yasuyk">Pinboard</a></li>
+  <li><a href="https://github.com/yasuyk">Github</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">[Reading Notes] JavaScript the Definitive Guide, 6th Edition</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-07T00:44:00+09:00" pubdate data-updated="true">2013-04-07</time></p>
+  </header>
+  
+  <h1>CHAPTER 3 Types, Values, and Variables</h1>
+
+<h2>3.10 Variable Scope</h2>
+
+<h3>3.10.1 Function Scope and Hoisting</h3>
+
+<pre><code>var scope = 'global';
+function f() {
+  console.log(scope);  // Prints "undefined", not "global"
+  var scope = 'local'; // Variable initialized here, but defined everywhere
+  console.log(scope);  // Prints "local"
+}
+</code></pre>
+
+<p>Since JavaScript does not have block scope, Declaring all their variables at the top of the function makes their source code accurately reflect the true scope of the variables.</p>
+
+<pre><code>function f() {
+  var scope; // Local variable is declared at the top of the function
+  console.log(scope); // It exists here, but still has "undefined" value
+  scope = "local"; // Now we initialize it and give it a value
+  console.log(scope); // And here it has the value we expect
+}
+</code></pre>
+
+<h1>CHAPTER 4 Expressions and Operators</h1>
+
+<h2>4.12 Evaluation Expressions</h2>
+
+<h3>4.12.2 Global eval()</h3>
+
+<ul>
+<li><p>direct eval</p>
+
+<p>  a call to the eval() function with an expression that uses the exact, unqualified name &#8220;eval&#8221;.</p>
+
+<p>  Direct calls to eval() use the variable environment of the calling context.</p></li>
+<li><p>indirect call</p>
+
+<p>  eval() function invoked by any name other than &#8220;eval&#8221;.</p>
+
+<p>  Indirect call uses the global object as its variable environment and cannot read, write, or define local variables or functions.</p></li>
+</ul>
+
+
+<pre><code>
+var geval = eval;                      // Using another name does a global eval
+var x = "global", y = "global";        // Two global variables
+function f() {                         // This function does a local eval
+  var x = "local";                     // Define a local variable
+  eval("x += 'changed';");             // Direct eval sets local variable
+  return x;                            // Return changed local variable
+}
+function g() {                         // This function does a global eval
+  var y = "local";                     // A local variable
+  geval("y += 'changed';");            // Indirect eval sets global variable
+  return y;                            // Return unchanged local variable
+}
+console.log(f(), x); // Local variable changed: prints "localchanged global":
+console.log(g(), y); // Global variable changed: prints "local globalchanged":
+</code></pre>
+
+
+<p>A global eval allows you to execute strings of code as if they were independent, top-level scripts.</p>
+
+<h2>4.13 Miscellaneous Operators</h2>
+
+<h3>4.13.2 The typeof Operator</h3>
+
+<p>Note that typeof returns “object” if the operand value is null. If you want to distinguish null from objects, you’ll have to explicitly test for this special-case value.</p>
+
+<p>In order to distinguish one class of object from another, you must use other techniques, such as the instanceof operator (see §4.9.4), the class attribute (see §6.8.2), or the constructor property
+(see §6.8.1 and §9.2.2).</p>
+
+<h3>4.13.4 The void Operator</h3>
+
+<p>The most common use for this operator is in a client-side javascript: URL, where it allows you to evaluate an expression for its side effects without the browser displaying the value of the evaluated
+expression. For example, you might use the void operator in an HTML &lt;a> tag as follows:</p>
+
+<pre><code>&lt;a href="javascript:void window.open();"&gt;Open New Window&lt;/a&gt;
+</code></pre>
+
+<h1>CHAPTER 5 Statements</h1>
+
+<h2>5.3 Declaration Statements</h2>
+
+<h3>5.3.2 function</h3>
+
+<p>Function declaration statements differ from function definition expressions in that they include a function name. Both forms create a new function object, but the function declaration statement also
+declares the function name as a variable and assigns the function object to it. Like variables declared with var, functions defined with function definition statements are implicitly “hoisted” to the
+top of the containing script or function, so that they are visible throughout the script or function. With var, only the variable declaration is hoisted—the variable initialization code remains where
+you placed it. With function declaration statements, however, both the function name and the function body are hoisted: all functions in a script or all nested functions in a function are declared
+before any other code is run. This means that you can invoke a Java- Script function before you declare it.</p>
+
+<p>Like the var statement, function declaration statements create variables that cannot be
+deleted. These variables are not read-only, however, and their value can be overwritten.</p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-07T00:44:00+09:00" pubdate data-updated="true">2013-04-07</time>
+        
+      </p>
+      
+        <div class="sharing">
+  <a href="http://b.hatena.ne.jp/entry/\{\{ site.url \}\}\{\{ post.url \}\}" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+  <a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yasuyk.github.com/reading-notes/javascript-the-definitive-guide-6th-edition/index.html" data-via="" data-counturl="http://yasuyk.github.com/reading-notes/javascript-the-definitive-guide-6th-edition/index.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/17/emacs-with-dash/">emacsのカーソル位置にある単語をDashで調べるには</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/16/emacs-marked/">emacsでもMarkedでmarkdown編集が快適になった</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/15/create-pinboard-chrome-extension/">Pinboardへブックマークを保存するChrome拡張を作りました</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/chrome'>chrome (1)</a></li><li><a href='/blog/categories/emacs'>emacs (2)</a></li><li><a href='/blog/categories/mac'>mac (2)</a></li><li><a href='/blog/categories/markdown'>markdown (1)</a></li><li><a href='/blog/categories/pinboard'>pinboard (1)</a></li></ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - yasuyk -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'yasuyksblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://yasuyk.github.com/reading-notes/javascript-the-definitive-guide-6th-edition/index.html';
+        var disqus_url = 'http://yasuyk.github.com/reading-notes/javascript-the-definitive-guide-6th-edition/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
