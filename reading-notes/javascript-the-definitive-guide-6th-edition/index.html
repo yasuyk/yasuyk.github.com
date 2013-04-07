@@ -200,6 +200,93 @@ before any other code is run. This means that you can invoke a Java- Script func
 <p>Like the var statement, function declaration statements create variables that cannot be
 deleted. These variables are not read-only, however, and their value can be overwritten.</p>
 
+<h1>CHAPTER 6 Objects</h1>
+
+<h2>6.5 Enumerating Properties</h2>
+
+<ul>
+<li><p>Object.keys()</p>
+
+<p>  Returns an array of all own enumerable properties found upon a given object, in the same order as that provided by a for-in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).</p></li>
+<li><p>Object.getOwnPropertyNames()</p>
+
+<p>  Returns an array of all properties (enumerable or not) found upon a given object.</p></li>
+</ul>
+
+
+<h2>6.7 Property Attributes</h2>
+
+<ul>
+<li>Object.defineProperty()</li>
+<li>Object.getOwnPropertyDescriptor()</li>
+</ul>
+
+
+<h2>6.8 Object Attributes</h2>
+
+<h3>6.8.3 The extensible Attribute</h3>
+
+<ul>
+<li>Object.isExtensible()</li>
+<li>Object.preventExtensions()</li>
+<li>Object.seal()</li>
+<li>Object.isSealed()</li>
+<li>Object.freeze()</li>
+<li>Object.isFrozen()</li>
+</ul>
+
+
+<h2>6.9 Serializing Objects</h2>
+
+<ul>
+<li>JSON.stringify()</li>
+<li>JSON.parse()</li>
+</ul>
+
+
+<h1>CHAPTER 7 Arrays</h1>
+
+<h2>7.4 Array Length</h2>
+
+<p>Arrays implement in order to maintain the length invariant is that if you set the length property to a non-negative integer n smaller than its current value, any array elements whose index is greater than or equal to n are deleted from the array:</p>
+
+<pre><code>a = [1,2,3,4,5]; // Start with a 5-element array.
+a.length = 3;    // a is now [1,2,3].
+a.length = 0;    // Delete all elements. a is [].
+a.length = 5;    // Length is 5, but no elements, like new Array(5)
+</code></pre>
+
+<h1>CHAPTER 8 Functions</h1>
+
+<p> In addition to the arguments, each invocation has another value—the invocation context—that is the value of the <code>this</code> keyword.</p>
+
+<h2>8.2 Invoking Functions</h2>
+
+<p>JavaScript functions can be invoked in four ways:</p>
+
+<ul>
+<li>as functions</li>
+<li>as methods</li>
+<li>as constructors</li>
+<li>indirectly through their call() and apply() methods</li>
+</ul>
+
+
+<h2>8.5 Functions As Namespaces</h2>
+
+<pre><code>(function() { // mymodule function rewritten as an unnamed expression
+  // Module code goes here.
+}());         // end the function literal and invoke it now.
+</code></pre>
+
+<p>Note the use of parentheses in the code above. The open parenthesis before function is required because without it, the Java- Script interpreter tries to parse the function keyword as a function declaration state- ment. With the parenthesis, the interpreter correctly recognizes this as a function definition expression.</p>
+
+<h2>8.7 Function Properties, Methods, and Constructor</h2>
+
+<h3>8.7.6 The Function() Constructor</h3>
+
+<p>The Function() constructor is best thought of as a globally-scoped version of eval() (see §4.12.2) that defines new variables and functions in its own private scope.</p>
+
   
     <footer>
       <p class="meta">
