@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: pinboard | yasuyk]]></title>
-  <link href="http://yasuyk.github.com/blog/categories/pinboard/atom.xml" rel="self"/>
-  <link href="http://yasuyk.github.com/"/>
-  <updated>2013-04-11T04:29:06+09:00</updated>
-  <id>http://yasuyk.github.com/</id>
+  <link href="http://yasuyk.github.io/blog/categories/pinboard/atom.xml" rel="self"/>
+  <link href="http://yasuyk.github.io/"/>
+  <updated>2013-04-11T04:51:23+09:00</updated>
+  <id>http://yasuyk.github.io/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Pinboardへブックマークを保存するChrome拡張を作りました]]></title>
-    <link href="http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension/"/>
+    <link href="http://yasuyk.github.io/blog/2013/01/15/create-pinboard-chrome-extension/"/>
     <updated>2013-01-15T20:22:00+09:00</updated>
-    <id>http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension</id>
+    <id>http://yasuyk.github.io/blog/2013/01/15/create-pinboard-chrome-extension</id>
     <content type="html"><![CDATA[<ul>
 <li><a href="https://chrome.google.com/webstore/detail/pinboard/ghhlbnkkachmkhdfkfkoagcngfbnhgaf">Chrome ウェブストア - Pinboard</a></li>
 <li><a href="https://github.com/yasuyk/Pinboard-Chrome-Extension">yasuyk/Pinboard-Chrome-Extension</a></li>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: octopress | yasuyk]]></title>
-  <link href="http://yasuyk.github.com/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://yasuyk.github.com/"/>
-  <updated>2013-04-11T04:29:06+09:00</updated>
-  <id>http://yasuyk.github.com/</id>
+  <link href="http://yasuyk.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://yasuyk.github.io/"/>
+  <updated>2013-04-11T04:51:23+09:00</updated>
+  <id>http://yasuyk.github.io/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopressでサイドバーを表示しない]]></title>
-    <link href="http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress/"/>
+    <link href="http://yasuyk.github.io/blog/2013/04/11/how-to-remove-sidebar-in-octopress/"/>
     <updated>2013-04-11T04:11:00+09:00</updated>
-    <id>http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress</id>
+    <id>http://yasuyk.github.io/blog/2013/04/11/how-to-remove-sidebar-in-octopress</id>
     <content type="html"><![CDATA[<p><code>_config.yml</code> に以下を書く。</p>
 
 <pre><code>sidebar: collapse

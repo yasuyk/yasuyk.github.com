@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[yasuyk]]></title>
-  <link href="http://yasuyk.github.com/atom.xml" rel="self"/>
-  <link href="http://yasuyk.github.com/"/>
-  <updated>2013-04-11T04:29:06+09:00</updated>
-  <id>http://yasuyk.github.com/</id>
+  <link href="http://yasuyk.github.io/atom.xml" rel="self"/>
+  <link href="http://yasuyk.github.io/"/>
+  <updated>2013-04-11T04:51:23+09:00</updated>
+  <id>http://yasuyk.github.io/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopressでサイドバーを表示しない]]></title>
-    <link href="http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress/"/>
+    <link href="http://yasuyk.github.io/blog/2013/04/11/how-to-remove-sidebar-in-octopress/"/>
     <updated>2013-04-11T04:11:00+09:00</updated>
-    <id>http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress</id>
+    <id>http://yasuyk.github.io/blog/2013/04/11/how-to-remove-sidebar-in-octopress</id>
     <content type="html"><![CDATA[<p><code>_config.yml</code> に以下を書く。</p>
 
 <pre><code>sidebar: collapse
@@ -29,9 +29,9 @@
   
   <entry>
     <title type="html"><![CDATA[「Command+Tab」に「Option」を組み合わせて最小化したアプリを復元する]]></title>
-    <link href="http://yasuyk.github.com/blog/2013/04/10/mac-command-tab-option/"/>
+    <link href="http://yasuyk.github.io/blog/2013/04/10/mac-command-tab-option/"/>
     <updated>2013-04-10T18:06:00+09:00</updated>
-    <id>http://yasuyk.github.com/blog/2013/04/10/mac-command-tab-option</id>
+    <id>http://yasuyk.github.io/blog/2013/04/10/mac-command-tab-option</id>
     <content type="html"><![CDATA[<p><a href="http://www.lifehacker.jp/2010/09/100917macshortcut.html">Mac OS Xのアプリ切り替えショートカット「Command＋Tab」に「Option」を足すとどうなるか？</a> より。</p>
 
 <pre><code>ウィンドウのないアプリで新しいウィンドウを開きたい時は、「Command＋
@@ -47,15 +47,15 @@ Tab」でそのアプリを選び、「Option」キーを押して、「Command�
   
   <entry>
     <title type="html"><![CDATA[emacsのカーソル位置にある単語をDashで調べるには]]></title>
-    <link href="http://yasuyk.github.com/blog/2013/01/17/emacs-with-dash/"/>
+    <link href="http://yasuyk.github.io/blog/2013/01/17/emacs-with-dash/"/>
     <updated>2013-01-17T02:27:00+09:00</updated>
-    <id>http://yasuyk.github.com/blog/2013/01/17/emacs-with-dash</id>
+    <id>http://yasuyk.github.io/blog/2013/01/17/emacs-with-dash</id>
     <content type="html"><![CDATA[<ul>
 <li><a href="https://itunes.apple.com/jp/app/dash-docs-snippets/id458034879">Dash (Docs &amp; Snippets)</a></li>
 </ul>
 
 
-<p> <img src="http://yasuyk.github.com/images/2013/01/dash_icon.175x175-75.png" alt="" /></p>
+<p> <img src="http://yasuyk.github.io/images/2013/01/dash_icon.175x175-75.png" alt="" /></p>
 
 <p><a href="https://itunes.apple.com/jp/app/dash-docs-snippets/id458034879">「Dash」</a> は高速なドキュメントブラウザ(とスニペット管理)です。</p>
 
@@ -82,9 +82,9 @@ Tab」でそのアプリを選び、「Option」キーを押して、「Command�
   
   <entry>
     <title type="html"><![CDATA[emacsでもMarkedでmarkdown編集が快適になった]]></title>
-    <link href="http://yasuyk.github.com/blog/2013/01/16/emacs-marked/"/>
+    <link href="http://yasuyk.github.io/blog/2013/01/16/emacs-marked/"/>
     <updated>2013-01-16T17:51:00+09:00</updated>
-    <id>http://yasuyk.github.com/blog/2013/01/16/emacs-marked</id>
+    <id>http://yasuyk.github.io/blog/2013/01/16/emacs-marked</id>
     <content type="html"><![CDATA[<p><a href="http://blog.glidenote.com/blog/2013/01/10/vim-quickrun-marked/">Glide Noteさんの記事</a>をみて、Markedを購入しました。</p>
 
 <h2>気に入ったところ</h2>
@@ -94,10 +94,10 @@ Tab」でそのアプリを選び、「Option」キーを押して、「Command�
 <p>下記のように、Multi-Columnは複数行のスタイルとなっていて、markdownを眺めるのに便利です。</p>
 
 <p>Multi-Columnスタイル<br/>
-<img src="http://yasuyk.github.com/images/2013/01/emacs-marked-multi-column.png" alt="" /></p>
+<img src="http://yasuyk.github.io/images/2013/01/emacs-marked-multi-column.png" alt="" /></p>
 
 <p>Githubスタイル<br/>
-<img src="http://yasuyk.github.com/images/2013/01/emacs-marked-github.png" alt="" /></p>
+<img src="http://yasuyk.github.io/images/2013/01/emacs-marked-github.png" alt="" /></p>
 
 <p>スタイルの変更はキーで操作できます。</p>
 
@@ -125,9 +125,9 @@ Tab」でそのアプリを選び、「Option」キーを押して、「Command�
   
   <entry>
     <title type="html"><![CDATA[Pinboardへブックマークを保存するChrome拡張を作りました]]></title>
-    <link href="http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension/"/>
+    <link href="http://yasuyk.github.io/blog/2013/01/15/create-pinboard-chrome-extension/"/>
     <updated>2013-01-15T20:22:00+09:00</updated>
-    <id>http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension</id>
+    <id>http://yasuyk.github.io/blog/2013/01/15/create-pinboard-chrome-extension</id>
     <content type="html"><![CDATA[<ul>
 <li><a href="https://chrome.google.com/webstore/detail/pinboard/ghhlbnkkachmkhdfkfkoagcngfbnhgaf">Chrome ウェブストア - Pinboard</a></li>
 <li><a href="https://github.com/yasuyk/Pinboard-Chrome-Extension">yasuyk/Pinboard-Chrome-Extension</a></li>
