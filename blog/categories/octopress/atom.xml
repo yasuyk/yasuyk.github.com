@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | yasuyk]]></title>
+  <link href="http://yasuyk.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://yasuyk.github.com/"/>
+  <updated>2013-04-11T04:17:28+09:00</updated>
+  <id>http://yasuyk.github.com/</id>
+  <author>
+    <name><![CDATA[yasuyk]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopressでサイドバーを表示しない]]></title>
+    <link href="http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress/"/>
+    <updated>2013-04-11T04:11:00+09:00</updated>
+    <id>http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress</id>
+    <content type="html"><![CDATA[<p><code>_config.yml</code> に下記を書く。</p>
+
+<pre><code>sidebar: collapse
+</code></pre>
+
+<p><a href="https://github.com/imathis/octopress/issues/342">How to remove the sidebar? II</a> より。</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -5,14 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Pinboardへブックマークを保存するChrome拡張を作りました - yasuyk</title>
+  <title>Octopressでサイドバーを表示しない - yasuyk</title>
   <meta name="author" content="yasuyk">
 
   
-  <meta name="description" content="Chrome ウェブストア - Pinboard
-yasuyk/Pinboard-Chrome-Extension Pinboardへブックマークを保存するChorme拡張は数多にあります。
-しかし、自分のほしい機能を持つ拡張をざっと探したところ見当たらなかったので、作ってみました。
-あと、 &hellip;">
+  <meta name="description" content="_config.yml に下記を書く。 sidebar: collapse How to remove the sidebar? II より。
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +19,7 @@ yasuyk/Pinboard-Chrome-Extension Pinboardへブックマークを保存するCho
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension/">
+  <link rel="canonical" href="http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress/">
   <!-- <link href="/favicon.png" rel="icon"> -->
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -93,7 +91,7 @@ yasuyk/Pinboard-Chrome-Extension Pinboardへブックマークを保存するCho
   <header>
     
       
-        <h1 class="entry-title">Pinboardへブックマークを保存するChrome拡張を作りました</h1>
+        <h1 class="entry-title">Octopressでサイドバーを表示しない</h1>
       
     
     
@@ -110,51 +108,19 @@ yasuyk/Pinboard-Chrome-Extension Pinboardへブックマークを保存するCho
   
 
 
-<time datetime="2013-01-15T20:22:00+09:00" pubdate data-updated="true">2013-01-15</time>
+<time datetime="2013-04-11T04:11:00+09:00" pubdate data-updated="true">2013-04-11</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><ul>
-<li><a href="https://chrome.google.com/webstore/detail/pinboard/ghhlbnkkachmkhdfkfkoagcngfbnhgaf">Chrome ウェブストア - Pinboard</a></li>
-<li><a href="https://github.com/yasuyk/Pinboard-Chrome-Extension">yasuyk/Pinboard-Chrome-Extension</a></li>
-</ul>
+<div class="entry-content"><p><code>_config.yml</code> に下記を書く。</p>
 
+<pre><code>sidebar: collapse
+</code></pre>
 
-<p><a href="https://pinboard.in">Pinboard</a>へブックマークを保存するChorme拡張は数多にあります。
-しかし、自分のほしい機能を持つ拡張をざっと探したところ見当たらなかったので、作ってみました。
-あと、Chorme拡張を作ってみたかったというのもあります。</p>
-
-<p><img src="http://yasuyk.github.com/images/pinboard_extension_screen_capture_01.png" alt="" />
-<img src="http://yasuyk.github.com/images/pinboard_extension_screen_capture_02.png" alt="" /></p>
-
-<p>次の機能が欲しかったものでした。</p>
-
-<ol>
-<li>ブックマーク保存のポップアップウィンドウで「タグクラウド」を表示する。</li>
-<li>「ブックマーク保存」、「あとで読む」、「すべてのブックマークを表示」、「あとで読むリストを表示」をキー操作で行える。</li>
-</ol>
-
-
-<p><strong>注意点</strong>としては、2. のキー操作は<a href="https://www.google.com/intl/en/chrome/browser/beta.html">Google Chrome Beta</a>のみ利用可能です。
-キー操作を<a href="http://developer.chrome.com/extensions/commands.html">chrome.commands</a>という開発中のAPIで実装していることが理由です。</p>
-
-<h1>インストール</h1>
-
-<p><a href="https://chrome.google.com/webstore/detail/pinboard/ghhlbnkkachmkhdfkfkoagcngfbnhgaf">Chrome ウェブストア - Pinboard</a> からインストールしてください。</p>
-
-<h1>Source Code</h1>
-
-<p>Githubで公開しています。</p>
-
-<p><a href="https://github.com/yasuyk/Pinboard-Chrome-Extension">yasuyk/Pinboard-Chrome-Extension</a></p>
-
-<h1>Pinboard検索の拡張について</h1>
-
-<p><a href="https://chrome.google.com/webstore/detail/pinboard-search/ipooeblefgjhpfcmpjgccamencpbjodd">Pinboard Search</a>がお勧めです。<br/>
-<a href="https://chrome.google.com/webstore/detail/pinboard-search/ipooeblefgjhpfcmpjgccamencpbjodd">Pinboard Search</a>は、<a href="https://chrome.google.com/webstore/detail/chromemigemo/pocnedlaincikkkcmlpcbipcflgjnjlj">ChromeMigemo</a>を入れると更に便利になります。</p>
+<p><a href="https://github.com/imathis/octopress/issues/342">How to remove the sidebar? II</a> より。</p>
 </div>
 
 
@@ -177,12 +143,12 @@ yasuyk/Pinboard-Chrome-Extension Pinboardへブックマークを保存するCho
   
 
 
-<time datetime="2013-01-15T20:22:00+09:00" pubdate data-updated="true">2013-01-15</time>
+<time datetime="2013-04-11T04:11:00+09:00" pubdate data-updated="true">2013-04-11</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/chrome/'>chrome</a>, <a class='category' href='/blog/categories/pinboard/'>pinboard</a>
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
   
 </span>
 
@@ -193,7 +159,7 @@ yasuyk/Pinboard-Chrome-Extension Pinboardへブックマークを保存するCho
   <a href="http://b.hatena.ne.jp/entry/\{\{ site.url \}\}\{\{ post.url \}\}" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
   <a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension/" data-via="" data-counturl="http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress/" data-via="" data-counturl="http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -218,8 +184,8 @@ yasuyk/Pinboard-Chrome-Extension Pinboardへブックマークを保存するCho
     
     <p class="meta">
       
+        <a class="basic-alignment left articlenav" href="/blog/2013/04/10/mac-command-tab-option/" title="Previous Post: 「Command+Tab」に「Option」を組み合わせて最小化したアプリを復元する">&laquo; 「Command+Tab」に「Option」を組み合わせて最小化したアプリを復元する</a>
       
-        <a class="basic-alignment right articlenav" href="/blog/2013/01/16/emacs-marked/" title="Next Post: emacsでもMarkedでmarkdown編集が快適になった">emacsでもMarkedでmarkdown編集が快適になった &raquo;</a>
       
     </p>
   </footer>
@@ -285,8 +251,8 @@ yasuyk/Pinboard-Chrome-Extension Pinboardへブックマークを保存するCho
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension/';
-        var disqus_url = 'http://yasuyk.github.com/blog/2013/01/15/create-pinboard-chrome-extension/';
+        var disqus_identifier = 'http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress/';
+        var disqus_url = 'http://yasuyk.github.com/blog/2013/04/11/how-to-remove-sidebar-in-octopress/';
         var disqus_script = 'embed.js';
       
     (function () {
