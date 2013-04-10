@@ -4,7 +4,7 @@
   <title><![CDATA[yasuyk]]></title>
   <link href="http://yasuyk.github.com/atom.xml" rel="self"/>
   <link href="http://yasuyk.github.com/"/>
-  <updated>2013-04-07T18:20:48+09:00</updated>
+  <updated>2013-04-10T18:10:10+09:00</updated>
   <id>http://yasuyk.github.com/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[「Command+Tab」に「Option」を組み合わせて最小化したアプリを復元する]]></title>
+    <link href="http://yasuyk.github.com/blog/2013/04/10/mac-command-tab-option/"/>
+    <updated>2013-04-10T18:06:00+09:00</updated>
+    <id>http://yasuyk.github.com/blog/2013/04/10/mac-command-tab-option</id>
+    <content type="html"><![CDATA[<p><a href="http://www.lifehacker.jp/2010/09/100917macshortcut.html">Mac OS Xのアプリ切り替えショートカット「Command＋Tab」に「Option」を足すとどうなるか？</a> より。</p>
+
+<pre><code>ウィンドウのないアプリで新しいウィンドウを開きたい時は、「Command＋
+Tab」でそのアプリを選び、「Option」キーを押して、「Command」キーを
+はなします。すると、そのアプリの新しいウィンドウが開きます。ウィン
+ドウを最小化しているアプリの場合は、同じショートカットキーを使うと、
+最小化されたウィンドウが開きます。
+</code></pre>
+
+<p>時々忘れるのでメモ。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[emacsのカーソル位置にある単語をDashで調べるには]]></title>
