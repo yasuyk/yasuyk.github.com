@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /reading-notes/
+Disallow: 
 
-Sitemap: http://yasuyk.github.io/sitemap.xml
+Sitemap: http://yasuyk.github.io/sitemap.xml 

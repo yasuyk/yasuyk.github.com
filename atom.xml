@@ -4,7 +4,7 @@
   <title><![CDATA[yasuyk]]></title>
   <link href="http://yasuyk.github.io/atom.xml" rel="self"/>
   <link href="http://yasuyk.github.io/"/>
-  <updated>2013-04-25T21:57:41+09:00</updated>
+  <updated>2013-04-27T13:26:11+09:00</updated>
   <id>http://yasuyk.github.io/</id>
   <author>
     <name><![CDATA[yasuyk]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GithubのREADMEはorg-modeで書くことができる]]></title>
+    <link href="http://yasuyk.github.io/blog/2013/04/27/github-readme-org-mode/"/>
+    <updated>2013-04-27T13:20:00+09:00</updated>
+    <id>http://yasuyk.github.io/blog/2013/04/27/github-readme-org-mode</id>
+    <content type="html"><![CDATA[<p>下記は、org-modeでREADMEを書いているリポジトリです。</p>
+
+<ul>
+<li><p><a href="https://github.com/Golevka/emacs-clang-complete-async">emacs-clang-complete-async</a></p></li>
+<li><p><a href="https://github.com/TeMPOraL/nyan-mode">nyan-mode</a></p></li>
+</ul>
+
+
+<p>今までこれを知らずにMarkdownで書いてました…。</p>
+
+<p>次に作るリポジトリからREADMEはorg-modeで書こうと思います。</p>
+
+<h2>参考</h2>
+
+<p><a href="https://github.com/github/markup">markup</a></p>
+
+<p>GithubでREADMEのレンダリングに使われているライブラリです。</p>
+
+<p>以下の書式がサポートされいます。</p>
+
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/">.markdown, .mdown, .md</a> &#8211; <code>gem install redcarpet</code> (https://github.com/vmg/redcarpet)</li>
+<li><a href="http://www.textism.com/tools/textile/">.textile</a> &#8211; <code>gem install RedCloth</code></li>
+<li><a href="http://rdoc.sourceforge.net/">.rdoc</a> &#8211; <code>gem install rdoc -v 3.6.1</code></li>
+<li><a href="http://orgmode.org/">.org</a> &#8211; <code>gem install org-ruby</code></li>
+<li><a href="http://wikicreole.org/">.creole</a> &#8211; <code>gem install creole</code></li>
+<li><a href="http://www.mediawiki.org/wiki/Help:Formatting">.mediawiki</a> &#8211; <code>gem install wikicloth</code></li>
+<li><a href="http://docutils.sourceforge.net/rst.html">.rst</a> &#8211; <code>easy_install docutils</code></li>
+<li><a href="http://www.methods.co.nz/asciidoc/">.asciidoc</a> &#8211; <code>brew install asciidoc</code></li>
+<li><a href="http://search.cpan.org/dist/perl/pod/perlpod.pod">.pod</a> &#8211; <code>Pod::Simple::HTML</code>
+comes with Perl >= 5.10. Lower versions should install Pod::Simple from CPAN.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopressでサイドバーを表示しない]]></title>
